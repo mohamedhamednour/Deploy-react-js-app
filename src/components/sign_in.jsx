@@ -40,10 +40,10 @@ export default function Signin() {
   
   return (
     <>
-      <div className="center">
+      <div className="col-12  center">
       {error && <Alert variant="danger">{error}</Alert>}
 
-        <form  onSubmit={handleSubmit} className="col-12">
+        <form  onSubmit={handleSubmit} className="col-12 ">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">
               Email address

@@ -33,7 +33,7 @@ export default function Signup() {
 
   return (
     <>
-     <div className="center">
+     <div className="ol-12 center">
      <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Sign Up</h2>

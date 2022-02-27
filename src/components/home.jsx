@@ -1,11 +1,6 @@
 import React from "react";
 import "../App.css";
-import { Link, Route, Routes} from "react-router-dom";
-import Create from "./Todo/create";
-import { useAuth  } from "../components/auth/usecontext"
 
-
-import { Shoping } from "./Todo/shoping";
 
 
 export const Home = () => {
@@ -14,35 +9,22 @@ export const Home = () => {
   
   return (
     <>
-      
+      <div className="container">
       <div className="row">
-        <div className="col-3 dashhord">
-          <ul>
-            <li>
-              <Link className="link" to="/home/create"> Create image</Link>
-              <br></br>
-            </li>
-            <li>
-              <Link className="link" to="/home/update">update</Link>
-            </li>
-            <li>
-              <Link className="link" to="/">show prodact</Link>
-            </li>
-          </ul>
+        <div className="col-12 col-lg-6">
+         <h1>MR KHALED SALAH</h1>
         </div>
 
-        <div align='center' className="col-9 centerr">
-         
+        <div  className="col-12 col-lg-6 ">
+          <h2>about me </h2>
+          <button className="btn btn-primary">contact us</button>
+          <button className="btn btn-danger">about me </button>
+
        
-          <Routes>
-
-            <Route path="/home/create" element={<Create />} />
-            <Route path="/" element={<Shoping />} />
-
-
-          </Routes>
         </div>
       </div>
+      </div>
+     
     </>
   );
 };
