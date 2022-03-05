@@ -4,18 +4,22 @@ import Signin from './components/sign_in'
 import Navbar from './components/navbar'
 import { Home } from '../src/components/home'
 import {PrivateRoute} from "../src/components/auth/provideroute";
+import Footer from "./components/Todo/footer";
 
 
 import { AuthProvider } from '../src/components/auth/usecontext'
 import { Route, Routes } from "react-router-dom";
 import Phone from './components/auth/authphone'
 import ForgotPassword from './components/Todo/forget-password'
+import { useAuth  } from "./components/auth/usecontext"
 
 
 
 
 function App() {
   // const { currentUser } = useAuth()
+  // const {  currentUser} = useAuth()
+
 
   
 
@@ -24,6 +28,7 @@ function App() {
 
       <AuthProvider>
     <Navbar />     
+< Footer/> 
  <pre>
 
 

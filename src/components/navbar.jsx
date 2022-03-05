@@ -46,8 +46,8 @@ const colorbg_ = ()=>{
   return (
     <>
      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <div class="container-fluid">
-    <a  class="navbar-brand" href="/">Home</a>
+  <div class="container-fluid nav">
+    <a  class="navbar-brand" href="/">El-GENRAL</a>
     <button id="whitee" className="btn btn-light " onClick={colorbg} >bg white</button>
     <button  id="dark" className="btn btn-dark " onClick={colorbg_} >bg dark</button>
 
@@ -56,9 +56,15 @@ const colorbg_ = ()=>{
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
- 
         <li class="nav-item">
-        {currentUser ? <a onClick={handleLogout} class="nav-link" href="#">Log out</a>: ''}
+        {currentUser ? <a  class="nav-link" href="#">contact-us</a>: ''}
+        </li>
+        <li class="nav-item">
+        {currentUser ? <a class="nav-link" href="#">about-me</a>: ''}
+        </li>
+ 
+        <li id="li-right" class="nav-item">
+        {currentUser ? <a onClick={handleLogout} class="nav-link" href="#">Log-out</a>: ''}
           
         </li>
         <li class="nav-item linkkss ">

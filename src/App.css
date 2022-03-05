@@ -53,3 +53,38 @@ h5{
 .container-fluid{
   color: aliceblue;
 }
+
+#li-right{
+margin-left: 190px;
+}
+
+.nav{
+  margin-left: 30px;
+
+}
+
+.nav-item:hover{
+  border: 1px solid whitesmoke;
+  
+}
+
+
+footer{
+  position: absolute;
+  bottom: -500px;
+  width: 100%;
+  background-color: rgb(12, 1, 36);
+  color: white;
+  text-align: center;
+}
+
+.iconface{
+  font-size: 50px;
+  text-decoration: none;
+  color: bisque;
+  border-radius:50px;
+}
+.foot{
+  padding: 20px;
+  font-size: 60px;
+}
