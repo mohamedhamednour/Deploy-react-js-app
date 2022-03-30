@@ -1,7 +1,9 @@
 import React from "react";
 import "../App.css";
-import {Link} from 'react-router-dom'
-
+import {Link} from 'react-router-dom';
+import logo from './img/sofra.png';
+import abda from './img/ibd3.png';
+import bold from './img/bold.png';
 
 
 export const Home = () => {
@@ -13,15 +15,34 @@ export const Home = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <h1>EL-GENRAL</h1>
+            <h1>software engineer</h1>
 
-            <h1>MR KHALED SALAH</h1>
+            <h1>mohamedhamed</h1>
           </div>
 
           <div className="col-12 col-lg-6 ">
-            <h2>about me </h2>
-            <button className="btn btn-primary">contact us</button>
-            <button className="btn btn-danger">about me </button>
+            <h2>portfolio </h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img href='https://mohamedhamednour.github.io/Sofra-site/' src={logo} class="d-block " alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={abda} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={bold} class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
           </div>
@@ -47,7 +68,7 @@ export const Home = () => {
           <div className="col-12 col-lg-4">
           <div class="card">
       <div class="card-body">
-        <h5 class="card-title">تاريخ</h5>
+        <h5 class="card-title">React js </h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
@@ -59,7 +80,7 @@ export const Home = () => {
 
           <div class="card">
       <div class="card-body">
-        <h5 class="card-title">جغرافيا</h5>
+        <h5 class="card-title">Django</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
@@ -70,7 +91,7 @@ export const Home = () => {
 
           <div class="card">
       <div class="card-body">
-        <h5 class="card-title">جولوجيا</h5>
+        <h5 class="card-title">ES6</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <Link class="btn btn-primary" to='/forgertpass'>Go somewhere</Link>
       </div>
